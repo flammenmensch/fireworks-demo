@@ -1,0 +1,17 @@
+<div class="page-header text-left">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">Fireworks demo</li>
+    </ol>
+    <h1>Fireworks <small>demo</small></h1>
+</div>
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <img ng-show="desktopConnected && !deviceConnected" class="shadowed bottom-margin" adluxe-qr data="deviceUrl" alt="QR Code for mobile client">
+
+        <div class="layer-container shadowed bottom-margin" ng-if="desktopConnected && deviceConnected">
+            <div class="layer game" adluxe-aircraft></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="adluxe">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Adluxe">
+    <title>Adluxe demos</title>
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="vendors/devicons/css/devicons.css">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/">Adluxe</a>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#/fireworks">Projects</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+
+            <p class="navbar-text navbar-right">
+                <adluxe-connection connected="false"></adluxe-connection>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div ng-view>
+            <!-- views go here -->
+        </div>
+        <footer class="text-center">
+            <ul class="list-inline text-muted">
+                <li class="inset devicons devicons-html5"></li>
+                <li class="inset devicons devicons-css3_full"></li>
+                <li class="inset devicons devicons-html5_device_access"></li>
+                <li class="inset devicons devicons-html5_multimedia"></li>
+                <li class="inset devicons devicons-html5_connectivity"></li>
+                <li class="inset devicons devicons-html5_3d_effects"></li>
+                <li class="inset devicons devicons-nodejs"></li>
+                <li class="inset devicons devicons-angular"></li>
+                <li class="inset devicons devicons-jquery"></li>
+                <li class="inset devicons devicons-grunt"></li>
+                <li class="inset devicons devicons-gulp"></li>
+                <li class="inset devicons devicons-bower"></li>
+                <li class="inset devicons devicons-bootstrap"></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- build:js js/vendors.min.js -->
+    <script type="text/javascript" src="vendors/phaser-official/build/phaser.min.js"></script>
+    <!--script type="text/javascript" src="./vendors/gl-matrix/dist/gl-matrix-min.js"></script-->
+    <script type="text/javascript" src="vendors/socket.io-client/socket.io.js"></script>
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script type="text/javascript" src="js/adluxe-core.js"></script>
+    <script type="text/javascript" src="js/adluxe-fireworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

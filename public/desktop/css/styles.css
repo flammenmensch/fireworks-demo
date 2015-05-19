@@ -1,0 +1,67 @@
+body {
+    padding-top: 40px;
+    background: url(/assets/wavegrid.png) repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: url(/assets/wavegrid_@2X.png) repeat;
+}
+
+.layer-container {
+    background: #fff;
+    width:  600px;
+    height: 600px;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+.layer {
+    cursor: crosshair;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.game {
+    width: 600px;
+    height: 600px;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+.shadowed {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.5);
+    -moz-box-shadow:    0px 2px 5px 0px rgba(33, 33, 33, 0.5);
+    box-shadow:         0px 2px 5px 0px rgba(33, 33, 33, 0.5);
+}
+
+.inset {
+    text-shadow: #fff 0px 1px 0px;
+}
+
+.devicons {
+    font-size: 32px;
+}
+
+.connection-status {
+    color: #666;
+    font-size: 18px;
+}
+
+.connection-status.connected {
+    color: #fff;
+    text-shadow: #fff 0px 0px 2px;
+    -webkit-animation: pulsate 2s linear infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0%   {opacity:   0%}
+    16%  {opacity:  40%}
+    32%  {opacity:  80%}
+    50%  {opacity: 100%}
+    66%  {opacity:  80%}
+    82%  {opacity:  40%}
+    100% {opacity:   0%}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "fireworks-demo-client",
+  "main": "index.js",
+  "version": "0.1.0",
+  "authors": [
+    "Alexey Protasov<ap@adluxe.ru>"
+  ],
+  "description": "Client app for fireworks demo",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.2.21",
+    "angular-route": "~1.2.21",
+    "greensock": "~1.13.1",
+    "devicons": "~1.4.0",
+    "angular-animate": "~1.2.21",
+    "angular-resource": "~1.2.21",
+    "socket.io-client": "~1.0.6",
+    "angular-touch": "~1.2.21",
+    "gl-matrix": "~2.2.1",
+    "phaser-official": "~2.0.7"
+  }
+}
